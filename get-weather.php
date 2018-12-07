@@ -18,8 +18,8 @@ $response = curl_exec($ch);
 curl_close($ch);
 $data = json_decode($response); //, true
 $currentTime = time() ;
-var_dump($currentTime);
 $pretty_data = json_encode($data, JSON_PRETTY_PRINT);
+//var_dump($currentTime);
 //echo $pretty_data;
 ?>
 
