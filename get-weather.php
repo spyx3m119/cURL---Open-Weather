@@ -2,7 +2,7 @@
 $apiKey = "39459579d3cade1d6ccee63937249dcc";
 $cityId = "1723064";
 $units = 'metric'; // Celcius, imperial = F, empty is K
-
+date_default_timezone_set('Asia/Manila');
 $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?id=" . $cityId . "&lang=en&time=UTC8&units=" . $units . "&APPID=" . $apiKey ;
 
 $ch = curl_init();
